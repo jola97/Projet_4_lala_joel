@@ -39,6 +39,18 @@ a:hover {
     position: relative;
 }
 
+a:focus{
+    /*background: #3f2418;*/
+    border: 3px solid #3f2418;
+}
+
+button:focus{
+    background: #3f2418;
+    color: #FFFFFF!important;
+    border: 3px solid #3f2418;
+}
+
+
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -91,7 +103,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -530,10 +542,17 @@ button {
     opacity: 1;
 }
 
-a[data-lightbox] {
+/*a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
+}*/
+
+a[data-lightbox] {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -639,7 +658,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -652,6 +671,21 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #212121;
 }
 
 .container {
@@ -677,7 +711,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -709,11 +743,18 @@ h2 {
     line-height: 1.4em;
 }
 
-h3 {
+/*h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+}*/
+
+h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -721,9 +762,16 @@ h3 {
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
+.title-color {
+    color: #F3976C;
+}
+
+/*h1 {
+    color: #333333!important;
+}*/
 
 h1 {
-    color: #333333!important;
+    color: #212121;
 }
 
 h4 {
@@ -735,13 +783,17 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
+/*.white {
     color: #FFFFFF!important;
+}*/
+
+.white {
+    color: #212121!important;
 }
 
-.portfolio-thumb {
+/*.portfolio-thumb {
     margin-bottom: 24px;
-}
+}*/
 
 .portfolio-row {
     margin-bottom: 44px;
@@ -774,13 +826,18 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
+/*.tc-white {
     color: #F3976C!important;
-}
+}*/
+
+/*.btn-atomic-tangerine {
+    background: #F3976C;
+    color: #FFFFFF!important;
+}*/
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #212121!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -818,11 +875,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere-min.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/m-picture-min.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +905,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +929,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +941,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+    /*    padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
