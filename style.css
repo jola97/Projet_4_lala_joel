@@ -41,13 +41,13 @@ a:hover {
 
 a:focus{
     /*background: #3f2418;*/
-    border: 3px solid #3f2418;
+    border: 1px solid #3f2418;
 }
 
 button:focus{
     background: #3f2418;
     color: #FFFFFF!important;
-    border: 3px solid #3f2418;
+    border: 1px solid #3f2418;
 }
 
 
@@ -515,6 +515,11 @@ button {
 
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
+}
+
+footer a{
+    padding: 48px 48px 48px 0;
+    line-height: 2;
 }
 
 .form-control {
