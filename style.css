@@ -547,12 +547,6 @@ footer a{
     opacity: 1;
 }
 
-/*a[data-lightbox] {
-    position: relative;
-    display: block;
-    text-align: center;
-}*/
-
 a[data-lightbox] {
     position: relative;
     display: flex;
@@ -608,6 +602,7 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    margin-bottom: 0;
 }
 
 .close-lightbox {
@@ -663,20 +658,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}*/
 
 h1,
 h2,
@@ -748,13 +729,6 @@ h2 {
     line-height: 1.4em;
 }
 
-/*h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}*/
-
 h2 {
     font-size: 15px;
     text-transform: uppercase;
@@ -769,11 +743,8 @@ h2 {
 }
 .title-color {
     color: #F3976C;
+    filter: brightness(1.2);
 }
-
-/*h1 {
-    color: #333333!important;
-}*/
 
 h1 {
     color: #212121;
@@ -788,17 +759,9 @@ h4 {
     margin-top: 24px;
 }
 
-/*.white {
-    color: #FFFFFF!important;
-}*/
-
 .white {
     color: #212121!important;
 }
-
-/*.portfolio-thumb {
-    margin-bottom: 24px;
-}*/
 
 .portfolio-row {
     margin-bottom: 44px;
@@ -830,15 +793,6 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
-/*.tc-white {
-    color: #F3976C!important;
-}*/
-
-/*.btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
-}*/
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -934,10 +888,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    /*.bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }*/
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -946,8 +897,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-    /*    padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
